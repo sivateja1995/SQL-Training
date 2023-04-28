@@ -1,0 +1,2 @@
+# SQL-Training
+mysql training 
