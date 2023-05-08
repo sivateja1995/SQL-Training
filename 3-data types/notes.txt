@@ -1,0 +1,24 @@
+there are different types of datatypes. but we mostyly focus on the mostly used one. 
+for text base:
+ char(x) => saves the data and rest with spaces.
+ varchar(x) => saves the data and rest are trucncated. 
+ text(x) => used to store the long texts with unlimited length. 
+
+ for numeric base data types: 
+ int (small int,large int),
+ decimal,numeric ( user to store the fractional numbers with fixed precision)
+ float,real (storgin of the numbers with the floating values)
+
+
+ for date data type:
+ Date => only to store the date
+ datetime, timestamp => only to store the date along with time (hours and minutes)
+
+ other data types:
+ boolean => for storing true and flase.
+ JSON => to store data in the json format
+
+question: how to store images in the databases !? 
+answer: we don't store iamges in the databases,
+        instead we create a folder we store the images in that path then we will save that path in the databases
+
