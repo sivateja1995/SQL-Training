@@ -33,7 +33,7 @@
             "driver": "MySQL",
             "name": "mockmysql",
             "group": "mockmysql",
-            "database": "sqlTraining",
+            "database": "talently",
             "username": "root",
             "askForPassword": true
         },
@@ -45,8 +45,9 @@
             "driver": "PostgreSQL",
             "name": "mockpostgres",
             "group": "mockpostgres",
-            "database": "sqlTraining",
+            "database": "talently",
             "username": "postgres"
         }
-    ]
+    ],
+    "sqltools.autoOpenSessionFiles": false
 }
