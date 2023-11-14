@@ -4,6 +4,9 @@ for text base:
  varchar(x) => saves the data and rest are trucncated. 
  text(x) => used to store the long texts with unlimited length. 
 
+ for sql => text,small text & medium text.
+ for postgresql => 
+
  for numeric base data types: 
  int (small int,large int),
  decimal,numeric ( user to store the fractional numbers with fixed precision)

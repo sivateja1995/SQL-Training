@@ -1,1 +1,1 @@
-CREATE DATABASE  talently;
+CREATE DATABASE IF NOT EXISTS  talently;

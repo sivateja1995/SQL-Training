@@ -25,16 +25,16 @@
     "sqltools.connections": [
         {
             "mysqlOptions": {
-                "authProtocol": "default"
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
             },
             "previewLimit": 50,
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
-            "name": "mockmysql",
-            "group": "mockmysql",
-            "database": "talently",
-            "username": "root",
+            "name": "test",
+            "database": "mock",
+            "username": "admin",
             "askForPassword": true
         },
         {
@@ -43,10 +43,9 @@
             "port": 5432,
             "askForPassword": true,
             "driver": "PostgreSQL",
-            "name": "mockpostgres",
-            "group": "mockpostgres",
-            "database": "talently",
-            "username": "postgres"
+            "name": "postgres",
+            "database": "mock",
+            "username": "admin"
         }
     ],
     "sqltools.autoOpenSessionFiles": false
