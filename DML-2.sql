@@ -23,3 +23,65 @@ select * from employees order by salary  DESC;
 
 select e.first_name , d.department_name from employees as e , departments as d WHERE  e.department_id=d.department_id;
 commit ;
+
+show databases;
+use classicmodels;
+show tables;
+ 
+commit ;
+
+
+--- using orderby statement
+
+show tables;
+select * from customers;
+
+select * from customers order by creditLimit  desc;
+select * from orders;
+
+create database mock;
+use mock;
+show tables;
+
+
+
+
+
+
+-- creating the table cutomers;
+create table customers(
+ id serial primary key,
+ name varchar(100),
+ age  integer,
+ address text,
+ salary float
+);
+
+-- inserting of the data into the cutomers 
+insert into customers(name,age,address,salary) values ('Ramesh', 32,'Ahmedabad',2000.00);
+insert into customers(name,age,address,salary) values ('Khiln',25,'Delhi',1500.00);
+insert into customers (name,age,address, salary) values ('kaushik',23,'Kota',2000.00);
+insert into customers (name,age,address, salary) values ('Chaitali',25,'Mumbai',6500.00);
+insert into customers (name,age,address, salary) values ('Hardial',27,'Bhopal',8500.00);
+insert into customers (name,age,address, salary) values ('komal',22,'MP',4500.00);
+
+
+
+commit;
+select * from employees;
+-- using the group by for the DML 
+use hr;
+-- grouping the employees as per the project manager 
+select manager_id ,count(manager_id) from employees group by manager_id;
+
+select * from employees;
+
+-- implementing the having 
+select manager_id ,count(manager_id) from employees group by manager_id having  manager_id =100 ; 
+
+
+
+-- joins 
+
+
+
