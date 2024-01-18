@@ -4,7 +4,7 @@ mysql training
 
 # Reference
 
-1. [Sql-Tutotrial](https://www.sqltutorial.org)
+1.[Sql-Tutotrial](https://www.sqltutorial.org)
 
 2.[Road-map](https://roadmap.sh)
 
