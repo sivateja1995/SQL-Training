@@ -10,6 +10,7 @@ select distinct manager_id from employees;
 -- selecting the DISTINCT salary from the employees;
 select DISTINCT salary from employees;
 
+<<<<<<< HEAD
 -- selecting the distinct job and salary 
 select distinct job_id,salary 
 from employees
@@ -24,3 +25,5 @@ select count(*) from employees;
 SELECT DISTINCT phone_number
 from employees
 order by phone_number;
+=======
+>>>>>>> 9309e4b (added the changes)
