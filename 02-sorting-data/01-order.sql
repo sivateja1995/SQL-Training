@@ -1,4 +1,4 @@
-=-- order by 
+-- order by 
 
 use hr;
 -- listing of the employees
@@ -9,7 +9,7 @@ select employee_id,first_name,last_name,hire_date,salary from employees;
 select employee_id,first_name,last_name,hire_date,salary from employees order by hire_date desc;
 
 
--- sortign with multiple columns
+-- sorting with multiple columns
 select employee_id,first_name,last_name,hire_date,salary from employees order by first_name, last_name desc;
 
 -- sorting salary of the employees from high to low ;
