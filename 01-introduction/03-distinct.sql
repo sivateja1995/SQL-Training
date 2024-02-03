@@ -7,7 +7,7 @@ select * from employees;
 select distinct manager_id from employees;
 
 
--- selecting the distict salary from the employees;
+-- selecting the DISTINCT salary from the employees;
 select DISTINCT salary from employees;
 
 -- selecting the distinct job and salary 
@@ -16,7 +16,7 @@ from employees
 order by job_id, salary desc;
 
 
--- checking total number fo the employyes count
+-- checking total number fo the employees count
 select count(*) from employees;
 
 
