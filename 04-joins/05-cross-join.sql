@@ -20,7 +20,7 @@ insert into sales_organization (sales_org_id,sales_org) values(1,'Domestic'),(2,
 -- inserting into the values of the sales_channel
 insert into sales_channel (channel_id,channel) values (1,'Wholesale'),(2,'Retail'),(3,'eCommerce'),(4,'TV Shopping');
 
-
+use hr;
 -- creation of the cross join 
 select sales_org,channel from sales_organization cross join sales_channel;
 
@@ -32,3 +32,6 @@ SELECT
 FROM
 	sales_organization,
 	sales_channel;
+
+--show TABLes
+show tables;
