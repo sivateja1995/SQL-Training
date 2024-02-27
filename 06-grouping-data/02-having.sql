@@ -1,3 +1,4 @@
+show DATABASEs;
 use hr;
 
 -- selection fo the employees 
