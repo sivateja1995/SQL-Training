@@ -1,0 +1,38 @@
+select * from inventory;
+
+
+select warehouse,sum(quantity)
+from inventory 
+group by warehouse;
+
+
+-- cube is not working in the mysql
+
+SELECT 
+    COALESCE(warehouse, '...All warehouses') AS warehouse,
+    COALESCE(product, '...All products') AS product,
+    SUM(quantity) AS total_quantity
+FROM 
+    inventory
+GROUP BY 
+    warehouse, product WITH ROLLUP
+ORDER BY 
+    warehouse,
+    product
+LIMIT 100;
+
+
+
+SELECT
+   COALESCE(department_name, '-') department,
+   COALESCE(job_title,'-') job,
+   COUNT(*) ,
+   SUM(salary) salary
+FROM
+   employees
+INNER JOIN departments USING (department_id)
+INNER JOIN jobs USING (job_id)
+GROUP BY department_name,job_title
+ORDER BY
+   department_name ASC ;
+
