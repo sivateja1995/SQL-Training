@@ -44,3 +44,23 @@ WHERE
             salary > 10000
                 AND e.department_id = d.department_id)
 ORDER BY department_name;
+
+--fetching the employees who are having more than the avg salary
+
+SELECT 
+    MIN(salary)
+FROM
+    employees
+GROUP BY department_id
+ORDER BY MIN(salary) DESC;
+
+
+
+select employee_id,first_name,last_name from employees
+where salary >= all(SELECT 
+    MIN(salary)
+FROM
+    employees
+GROUP BY department_id
+ORDER BY MIN(salary) DESC )
+order by first_name,last_name;
