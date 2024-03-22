@@ -43,3 +43,26 @@ order by
 department_name,
 first_name,
 last_name;
+
+
+
+SELECT 
+    first_name, last_name, salary
+FROM
+    employees
+WHERE
+    salary >= ALL (SELECT 
+            salary
+        FROM
+            employees
+        WHERE
+            department_id = 2)
+ORDER BY salary;     
+
+
+select * from employees where department_id=2;
+
+select min(salary) from employees where department_id=2;
+
+
+select * from employees where salary < all(select min(salary) from employees where department_id=2) order by salary desc;
