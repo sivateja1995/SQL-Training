@@ -23,12 +23,12 @@ select first_name,
         (2000 - YEAR(hire_date))
         when 1 then '1 years'
         when 3 then '3 years'
-        when 1 then '5 years'
-        when 3 then '10 years'
-        when 1 then '15 years'
-        when 3 then '20 years'
-        when 1 then '25 years'
-        when 3 then '30 years'
+        when 5 then '5 years'
+        when 10 then '10 years'
+        when 15 then '15 years'
+        when 20 then '20 years'
+        when 25 then '25 years'
+        when 30 then '30 years'
     end aniversary
 from employees
 order by first_name;
