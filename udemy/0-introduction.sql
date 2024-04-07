@@ -45,3 +45,4 @@ add column isOk BOOLEAN default true;
 
 -- checking of the table 
 select * from number_table;
+
