@@ -25,3 +25,5 @@ select department_name,count(*) as headcount from employees
 inner join departments using(department_id) 
 GROUP BY department_name 
 order by department_name;
+
+--- 
