@@ -1,4 +1,4 @@
--- Active: 1711887556119@@127.0.0.1@5432@talently
+
 -- showing of the database in postgress
 select
     pg.datname
@@ -53,7 +53,8 @@ create table
         company_name VARCHAR(225),
         company_address VARCHAR(450),
         yearly_revenue NUMERIC(7, 3),
-        is_hiring BOOLEAN
+        is_hiring BOOLEAN DEFAULT false
+
     );
 
 -- 2.1 creation of the employers table for the postgres
@@ -62,7 +63,9 @@ create table
         company_name VARCHAR(225),
         company_address VARCHAR(450),
         yearly_revenue NUMERIC(7, 3),
-        is_hiring BOOLEAN
+
+        is_hiring BOOLEAN DEFAULT false
+
     );
 
 -- 3.0 creation of the conversation table 
@@ -70,7 +73,10 @@ create table
     if not exists conversation (
         user_name varchar(200),
         employer_name varchar(200),
-        message text
+
+        message text,
+        date_sent TIMESTAMP DEFAULT current_timestamp
+
     );
 
 -- 3.1 creation of the conversation table for the postgres
@@ -78,7 +84,9 @@ create table
     conversation (
         user_name varchar(200),
         employer_name varchar(200),
-        message text
+        message text,
+        date_sent TIMESTAMP DEFAULT current_timestamp
+
     );
 
 commit;
