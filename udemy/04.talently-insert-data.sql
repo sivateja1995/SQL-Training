@@ -96,3 +96,11 @@ alter table conversation
 add column id serial PRIMARY key;
 
 commit;
+-- insert data into the conversation
+insert into
+    conversation (user_name, employer_name, message)
+values
+    ('sivateja', 'Learning Inc', 'hi, i am learning');
+    select * from conversation;
+    commit;
+
