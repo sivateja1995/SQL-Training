@@ -1,12 +1,12 @@
 -- creation of the online shop 
---tables 01.products 
+-- tables 01.products 
 -- products.product_name
 -- products.price
 -- products.description
 -- products.amount_in_stock
 -- products.images (image path as string)
---- task 1.create new database for the shop
---  task 2.add a table for the products
---   task 3.choose appropriate column name and data types
+-- task 1.create new database for the shop
+-- task 2.add a table for the products
+-- task 3.choose appropriate column name and data types
 -- task 4.update table and add sensible constrains
 -- task 5.update table and add primary key
