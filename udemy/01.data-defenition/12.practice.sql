@@ -1,5 +1,5 @@
 -- creation of the online shop 
---tables 01.products 
+-- tables 01.products 
 -- products.product_name
 -- products.price
 -- products.description
