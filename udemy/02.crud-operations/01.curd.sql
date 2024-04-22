@@ -1,4 +1,4 @@
--- Active: 1706804737031@@127.0.0.1@3306@sales_example
+-- Active: 1711887556119@@127.0.0.1@5432@sales_example
 create database sales_example;
 
 use sales_example;
@@ -29,5 +29,19 @@ create table
         is_disputed boolean default false
     );
 
+-- inserting of the data 
+insert into sales (
+    customer_name,
+    product_name,
+    volume,
+    is_recurring
+    
+) values (
+    'SIVA TEJA',
+    'A BOOK',
+    12.99,
+    TRUE
+);
 
-    drop table sales_table;
+
+select * from sales;
