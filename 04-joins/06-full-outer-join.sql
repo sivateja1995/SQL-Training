@@ -28,6 +28,11 @@ VALUES
 	(3, 'Banana', 2),
 	(4, 'Strawberry', NULL);
 
-
--- selection of the joins add. 
-
+SELECT
+	basket_name,
+	fruit_name
+FROM
+	fruits
+FULL OUTER JOIN baskets ON baskets.basket_id = fruits.basket_id
+WHERE
+	fruit_name IS NULL
