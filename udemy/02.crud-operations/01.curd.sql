@@ -1,4 +1,4 @@
--- Active: 1706804737031@@127.0.0.1@3306@sales_example
+-- Active: 1714461554180@@127.0.0.1@5432@admin
 create database sales_example;
 
 use sales_example;
