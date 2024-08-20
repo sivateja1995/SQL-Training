@@ -23,3 +23,5 @@ from
     address as a
     left join users as u on u.address_id = a.id
     left join cities as c on c.id = a.city_id;
+
+    
