@@ -6,7 +6,7 @@ from
     pg_database as pg;
 
 -- creating users for mysql
-create database if not exists talently;
+create database talently;
 
 -- viewing of the tables in mysql
 show tables;
@@ -54,7 +54,6 @@ create table
         company_address VARCHAR(450),
         yearly_revenue NUMERIC(7, 3),
         is_hiring BOOLEAN DEFAULT false
-
     );
 
 -- 2.1 creation of the employers table for the postgres
@@ -63,9 +62,7 @@ create table
         company_name VARCHAR(225),
         company_address VARCHAR(450),
         yearly_revenue NUMERIC(7, 3),
-
         is_hiring BOOLEAN DEFAULT false
-
     );
 
 -- 3.0 creation of the conversation table 
@@ -86,7 +83,6 @@ create table
         employer_name varchar(200),
         message text,
         date_sent TIMESTAMP DEFAULT current_timestamp
-
     );
 
 commit;
