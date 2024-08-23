@@ -4,6 +4,7 @@ database setup for the creation of the tables;
 
 ## TABLES
 
+````table
 | Users     |
 | --------- |
 | Full Name |
@@ -20,6 +21,7 @@ can be normalized into
 | email      |
 | addressId  |
 
+
 | Address      |
 | ------------ |
 | ID           |
@@ -32,7 +34,30 @@ can be normalized into
 | ID     |
 | Name   |
 
+<<<<<<< HEAD
 -- union and joins
 
 1. union is a clause that combines multiple result sets into one result set by appending rows
 2. join clause merge multiple tables into one result set by appending columns.
+=======
+````
+
+## union and joins
+
+1. union is a clause that combines multiple result sets into one result set by appending rows
+2. join clause merge multiple tables into one result set by appending columns.
+
+#### updating of the foreign key
+
+```sql
+alter table <table name>
+add foreign key <column_name> reference <related_table>
+```
+
+#### removing of the foreign key
+
+```sql
+alter table <table_name>
+drop foreign key <constraint_name>
+```
+>>>>>>> origin/develop
