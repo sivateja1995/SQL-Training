@@ -27,7 +27,7 @@ create table users (
     first_name varchar(300) NOT NULL,
     last_name varchar(300) NOT NULL,
     email VARCHAR(300) NOT NULL,
-    address_id int REFERENCES address (id) ON DELETE RESTRICT
+    address_id int REFERENCES address (id) ON DELETE case
 );
 
 -- creation of the address table
