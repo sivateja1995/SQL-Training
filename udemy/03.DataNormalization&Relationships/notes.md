@@ -34,12 +34,6 @@ can be normalized into
 | ID     |
 | Name   |
 
-<<<<<<< HEAD
--- union and joins
-
-1. union is a clause that combines multiple result sets into one result set by appending rows
-2. join clause merge multiple tables into one result set by appending columns.
-=======
 ````
 
 ## union and joins
@@ -60,4 +54,3 @@ add foreign key <column_name> reference <related_table>
 alter table <table_name>
 drop foreign key <constraint_name>
 ```
->>>>>>> origin/develop
