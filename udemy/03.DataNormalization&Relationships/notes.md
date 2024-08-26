@@ -4,7 +4,7 @@ database setup for the creation of the tables;
 
 ## TABLES
 
-````table
+```table
 | Users     |
 | --------- |
 | Full Name |
@@ -34,7 +34,7 @@ can be normalized into
 | ID     |
 | Name   |
 
-````
+```
 
 ## union and joins
 
@@ -54,3 +54,13 @@ add foreign key <column_name> reference <related_table>
 alter table <table_name>
 drop foreign key <constraint_name>
 ```
+
+#### Bigger Example
+
+tables
+
+1. Employees
+2. teams
+3. intranet_account
+4. buildings
+5. projects
