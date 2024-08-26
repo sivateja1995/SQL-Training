@@ -56,6 +56,7 @@ drop foreign key <constraint_name>
 ```
 
 #### Udemy Bigger Example
+#### Udemy Bigger Example
 
 tables
 
@@ -96,3 +97,12 @@ tables
 | --------- |
 | id        |
 | name      |
+
+#### relations
+
+```text
+Employees -1:n--> teams
+Employees -n:n--> projects
+Employees -1:1--> IntranetAccounts
+Teams -1:n--> Building
+```
