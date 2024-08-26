@@ -55,7 +55,7 @@ alter table <table_name>
 drop foreign key <constraint_name>
 ```
 
-#### Bigger Example
+#### Udemy Bigger Example
 
 tables
 
@@ -64,3 +64,35 @@ tables
 3. intranet_account
 4. buildings
 5. projects
+
+### table structure for the above tables
+
+| Employees  |
+| ---------- |
+| ID         |
+| name       |
+| birth_date |
+| email      |
+
+| Teams    |
+| -------- |
+| ID       |
+| name     |
+| building |
+
+| Projects  |
+| --------- |
+| ID        |
+| title     |
+| dead_line |
+| employees |
+
+| Intranet_Accounts |
+| ----------------- |
+| email             |
+| password          |
+
+| Buildings |
+| --------- |
+| id        |
+| name      |
