@@ -1,25 +1,31 @@
 -- postgres SQL
 
 -- projects
+drop table projects;
 create table projects (
     id SERIAL PRIMARY KEY,
     title VARCHAR(300) NOT NULL,
     deadline DATE
 );
 
+
+
 -- DEFINITION OF THE EMPLOYEE TABLE
 -- COMPANY BUILDING
+drop table company_building;
 CREATE TABLE company_building (
     id SERIAL PRIMARY KEY,
     name VARCHAR(3000) NOT NULL
 );
 -- TEAMS TABLE
+drop table teams;
 create table teams (
     id SERIAL PRIMARY key,
     name VARCHAR(300) NOT NULL,
     building_id INT REFERENCES company_building (id) ON DELETE SET NULL
 );
 
+drop table employees;
 create table employees (
     id SERIAL PRIMARY KEY,
     first_name varchar(300) NOT NULL,
@@ -30,11 +36,14 @@ create table employees (
 );
 
 -- DEFINITION OF THE INTRANET_ACCOUNTS
+drop table intranet_accounts;
 CREATE TABLE intranet_accounts (
     id SERIAL PRIMARY KEY,
     email VARCHAR(300) REFERENCES employees (email) ON DELETE CASCADE,
     password VARCHAR(200) NOT NULL
 );
+
+drop table project_employee;
 
 create table project_employee (
     id SERIAL PRIMARY KEY,

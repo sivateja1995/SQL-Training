@@ -9,5 +9,5 @@ values (
         'Max',
         'Schwarz',
         'max@test.com',
-        17
-    );
+        1
+        );

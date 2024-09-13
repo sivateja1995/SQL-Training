@@ -1,4 +1,4 @@
--- Active: 1723285658122@@127.0.0.1@5432@relations
+-- Active: 1724412291255@@127.0.0.1@5432@relations
 -- mysql
 -- insert of the data in the cities
 insert into
@@ -24,6 +24,8 @@ values ('teststreet', '8A', 3),
         6
     );
 
+
+select * from address;
 -- adding the users to the table
 insert into
     users (
@@ -36,25 +38,25 @@ values (
         'Max',
         'Schwarz',
         'max@test.com',
-        12
+        2
     ),
     (
         'manuel',
         'lorenz',
         'manu@test.com',
-        14
+        4
     ),
     (
         'julie',
         'Barnes',
         'julie@test.com',
-        13
+        3
     ),
     (
         'siva',
         'teja',
         'siva@test.com',
-        15
+        5
     );
 
 select * from address;

@@ -1,4 +1,5 @@
-- mysql
+-- Active: 1724412291255@@127.0.0.1@5432@relations
+--mysql
 -- creation of the user table
 create table users (
     id INT PRIMARY KEY AUTO_INCREMENT,

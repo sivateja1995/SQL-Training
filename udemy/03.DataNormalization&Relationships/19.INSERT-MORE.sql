@@ -1,4 +1,4 @@
-INSERT INTO company_buildings (name)
+INSERT INTO company_building (name)
 VALUES 
   ('Main Building'), 
   ('Research Lab'), 
@@ -11,7 +11,7 @@ VALUES
   ('R&D', 2);
 
 INSERT INTO employees 
-  (first_name, last_name, birthdate, email, team_id)
+  (first_name, last_name, birth_date, email, team_id)
 VALUES 
   ('Julie', 'Barnes', '1988-10-01', 'julie@test.com', 3),
   ('Max', 'Schwarz', '1989-06-10', 'max@test.com', 1),
