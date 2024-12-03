@@ -1,3 +1,5 @@
 
 
-select sum(price*billing_frequency) as annualRevenue from membership;
+-- select  sum(price*billing_frequency) as annualRevenue from membership;
+
+
