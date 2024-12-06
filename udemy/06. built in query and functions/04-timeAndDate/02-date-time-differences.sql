@@ -1,5 +1,5 @@
 -- calculating of the time difference
-select last_checkout - last_checkin from membership;
+select last_checkout - last_checkin from membership;    
 
 -- FOR THE MYSQL
 select timestampdiff (
