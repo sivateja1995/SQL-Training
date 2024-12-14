@@ -43,7 +43,7 @@ VALUES (48.99, 1),
     (19.49, 1),
     (8.49, 3);
 
--- checking of the data using exists function 
+-- checking of the data using exists function
 select EXISTS (
         select first_name, last_name
         from customers
@@ -51,5 +51,16 @@ select EXISTS (
             email = 'max@test.com'
     )
 
+select EXISTS ( select * from orders );
 
-    select EXISTS (select * from orders)
+select * from orders;
+
+-- using of the exists and subquery
+select o.id
+from orders as o
+where
+    exists (
+        select c.email
+        from customers as c
+        where c.id = o.customer_id and c.email = 'manu@test.com'
+    );
