@@ -23,18 +23,18 @@ create table instructors(
 );
 
 
-create table course{
+create table course(
     id int PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(300) not null UNIQUE,
-}
+    name VARCHAR(300) not null UNIQUE
+);
 
 
-drop table students ;
-create table students(
-    id int  PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(300) not NULL,
-    email VARCHAR(300) not null UNIQUE,
-    phone VARCHAR(300) not null UNIQUE,
-    instructor_id int  REFERENCES instructor(id),
-    course_id int  REFERENCES course(id)
+
+CREATE TABLE students (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(300) NOT NULL,
+    email VARCHAR(300) NOT NULL UNIQUE,
+    phone VARCHAR(300) NOT NULL UNIQUE,
+    instructor_id INT,
+    FOREIGN KEY (instructor_id) REFERENCES instructors(id) ON DELETE SET NULL
 );
