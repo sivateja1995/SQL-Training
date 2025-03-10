@@ -5,7 +5,7 @@ SELECT CONCAT('HELLO', ' ','WORLD') AS GREETING;
 SELECT SUBSTRING('DATABASE',1,4);
 
 
--- find the charecter length
+-- find the character length
 select CHAR_LENGTH("database") as string_length;
 
 
