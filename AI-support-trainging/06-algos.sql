@@ -329,6 +329,7 @@ where
             )
     );
 
-
-
-    select name ,salary , rank() over (order by salary desc) as 'rank' from hr.employees
+select name, salary, rank() over (
+        order by salary desc
+    ) as 'rank'
+from hr.employees;
