@@ -328,3 +328,7 @@ where
                 from e_commerce.products
             )
     );
+
+
+
+    select name ,salary , rank() over (order by salary desc) as 'rank' from hr.employees
