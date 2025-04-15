@@ -182,3 +182,30 @@ FROM product_spend;
 select category, product, spend, min(spend) over(partition by product) as min_product_spend from product_spend;
 
 select category, product, spend, max(spend) over(partition by product) as max_product_spend from product_spend;
+
+show databases;
+
+select * from hr.employees;
+
+select  department,max(salary) over(PARTITION BY department ) as 'dept_max-salary' from hr.employees;
+
+SELECT 
+    department, 
+    name, 
+    salary
+FROM 
+    hr.employees
+WHERE 
+    salary = (SELECT MAX(salary) 
+              FROM hr.employees e2 
+              WHERE e2.department = hr.employees.department);
+
+
+select department,name , salary from hr.employees where salary = (
+    select max(salary) from hr.employees e2 where e2.department = hr.employees.department
+);
+
+
+-- find gaps in the sequence
+select id, lead(id) over (order by id ) as next_id from e_commerce.orders;
+select *  from e_commerce.orders;
