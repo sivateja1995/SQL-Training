@@ -209,3 +209,17 @@ select department,name , salary from hr.employees where salary = (
 -- find gaps in the sequence
 select id, lead(id) over (order by id ) as next_id from e_commerce.orders;
 select *  from e_commerce.orders;
+
+
+WITH RECURSIVE employee_hierarchy AS (
+SELECT id, name, manager_id, 1 AS level
+FROM hr.employees WHERE manager_id IS NULL
+UNION ALL
+SELECT e.id, e.name, e.manager_id, h.level + 1
+FROM hr.employees e
+INNER JOIN employee_hierarchy h ON e.manager_id = h.id
+)
+SELECT * FROM employee_hierarchy;
+
+
+select * from hr.employees;
