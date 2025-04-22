@@ -1,4 +1,4 @@
--- Active: 1723285608966@@127.0.0.1@3306@e_commerce
+-- Active: 1738838544134@@127.0.0.1@3306@admin
 drop table e_commerce.product_spend;
 
 create table e_commerce.product_spend (
@@ -223,3 +223,25 @@ SELECT * FROM employee_hierarchy;
 
 
 select * from hr.employees;
+
+
+select * from hr.employees;
+
+show databases;
+
+use employees;
+
+SELECT department,
+SUM(CASE WHEN gender = 'Male' THEN salary END) AS male_salary,
+SUM(CASE WHEN gender = 'Female' THEN salary END) AS female_salary
+FROM employees.employees
+GROUP BY department;
+
+
+select * from employees.employees;
+
+select * from departments;
+
+
+show tables;
+
