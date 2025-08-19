@@ -26,14 +26,19 @@ select * from account_batch;
 
 -- create procedure to fetch the basket ball foundation deletails 
 
-DELIMITER create procedure call_tennis_students()
-BEGIN 
-SELECT a.name,c.course_name  from account_batch as ab  
-left join accounts as a on  ab.account_id = a.id 
-left join course as c on c.id = ab.course_id
-where ab.course_id = 146
-end
-DELIMITER;
+DELIMITER $$
+
+CREATE PROCEDURE call_tennis_students()
+BEGIN
+    SELECT a.name, c.course_name  
+    FROM account_batch AS ab  
+    LEFT JOIN accounts AS a ON ab.account_id = a.id 
+    LEFT JOIN course AS c ON c.id = ab.course_id
+    WHERE ab.course_id = 146;
+END $$
+
+DELIMITER ;
 
 
-call call_tennis_students();
+
+CALL call_tennis_students();

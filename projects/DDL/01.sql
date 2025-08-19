@@ -147,13 +147,23 @@ create table student_activities (
     is_active boolean not null default true
 );
 
--- drop table if exists parents cascade;
--- drop table if exists attendance cascade;
--- drop table if exists marks cascade;
--- drop table if exists enrollment cascade;
--- drop table if exists subject cascade;
--- drop table if exists students cascade;
--- drop table if exists class cascade;
--- drop table if exists teachers cascade;
--- drop table if exists department cascade;
--- drop type if exists GENDER cascade;
+-- Drop child tables first, then parents, then enums
+--
+--DROP TABLE IF EXISTS student_activities CASCADE;
+--DROP TABLE IF EXISTS activities CASCADE;
+--DROP TABLE IF EXISTS parents CASCADE;
+--DROP TABLE IF EXISTS attendance CASCADE;
+--DROP TABLE IF EXISTS marks CASCADE;
+--DROP TABLE IF EXISTS enrollment CASCADE;
+--DROP TABLE IF EXISTS subject CASCADE;
+--DROP TABLE IF EXISTS students CASCADE;
+--DROP TABLE IF EXISTS class CASCADE;
+--DROP TABLE IF EXISTS teachers CASCADE;
+--DROP TABLE IF EXISTS department CASCADE;
+--
+---- Finally drop enum
+--DROP TYPE IF EXISTS GENDER CASCADE;
+
+
+
+

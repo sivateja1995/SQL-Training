@@ -44,7 +44,7 @@
             "askForPassword": true,
             "driver": "PostgreSQL",
             "name": "postgres",
-            "database": "mock",
+            "database": "school",
             "username": "admin"
         }
     ],

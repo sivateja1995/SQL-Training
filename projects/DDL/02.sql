@@ -5,6 +5,8 @@ VALUES ('Science'),
     ('Mathematics'),
     ('Arts');
 
+select * from department d ;
+
 -- Inserting data into the teachers table
 -- assuming department ids are 1, 2, 3 respectively
 INSERT INTO

@@ -15,31 +15,6 @@
 				"closeIdleConnection": true,
 				"auth-model": "native"
 			}
-		},
-		"postgres-jdbc-198c215ff9f-b46a9c57a7c8e74": {
-			"provider": "postgresql",
-			"driver": "postgres-jdbc",
-			"name": "school",
-			"save-password": true,
-			"configuration": {
-				"host": "localhost",
-				"port": "5432",
-				"database": "school",
-				"url": "jdbc:postgresql://localhost:5432/school",
-				"configurationType": "MANUAL",
-				"type": "dev",
-				"closeIdleConnection": true,
-				"provider-properties": {
-					"@dbeaver-show-non-default-db@": "false"
-				},
-				"auth-model": "native"
-			},
-			"extensions": {
-				"ai.assistant": {
-					"confirmed": true,
-					"scope": "CURRENT_SCHEMA"
-				}
-			}
 		}
 	},
 	"connection-types": {
