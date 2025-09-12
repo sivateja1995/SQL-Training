@@ -19,7 +19,7 @@ order by id asc;
 
 
 -- checking for the students who are not enrolled
-select * from enrollment e  where e.student_id   in (select s.id from students s );
+select * from enrollment e  where e.student_id not  in (select s.id from students s );
 
 
 -- check the students who took subject calculus and also check what other sujects they are taken

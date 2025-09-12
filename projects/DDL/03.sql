@@ -1,4 +1,4 @@
-show databases;
+--show databases;
 
 select table_name
 from information_schema.tables
