@@ -1,4 +1,4 @@
--- Active: 1731904226326@@127.0.0.1@5432@school
+-- Active: 1723285658122@@127.0.0.1@5432@northwind
 -- 
 SELECT
     tablename
@@ -119,4 +119,7 @@ group by
 HAVING
     count(*) > 1;
 
+
+
+select * from northwind.coustomers;
     
